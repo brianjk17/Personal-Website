@@ -47,7 +47,7 @@ export function HeaderMobileNav({
       <>
         <div
           className={cn(
-            "fixed inset-x-0 top-14 bottom-0 z-44 bg-background/45 backdrop-blur-sm transition-opacity duration-300 ease-out md:hidden",
+            "fixed inset-x-0 top-14 bottom-0 z-44 bg-background/45 backdrop-blur-sm transition-opacity duration-300 ease-out lg:hidden",
             open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
           )}
           aria-hidden
@@ -56,7 +56,7 @@ export function HeaderMobileNav({
         <aside
           id={menuId}
           className={cn(
-            "fixed top-14 right-0 bottom-0 z-45 flex w-[min(100vw,20rem)] flex-col border-l border-border/80 bg-background/95 shadow-2xl backdrop-blur-md transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden",
+            "fixed top-14 right-0 bottom-0 z-45 flex w-[min(100vw,20rem)] flex-col border-l border-border/80 bg-background/95 shadow-2xl backdrop-blur-md transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
             open ? "translate-x-0" : "translate-x-full",
             !open && "pointer-events-none",
           )}
@@ -99,7 +99,7 @@ export function HeaderMobileNav({
         type="button"
         variant="outline"
         size="icon-sm"
-        className="rounded-2xl md:hidden"
+        className="rounded-2xl lg:hidden"
         aria-expanded={open}
         aria-controls={menuId}
         aria-label={open ? "Close menu" : "Open menu"}
