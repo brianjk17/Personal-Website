@@ -20,14 +20,16 @@ const display = Newsreader({
   weight: ["400", "600", "700"],
 })
 
+const siteTitle = `${person.name} — ${person.title}`
+
 export const metadata: Metadata = {
   title: {
-    default: `${person.name} — ${person.title}`,
+    default: siteTitle,
     template: `%s — ${person.name}`,
   },
   description: person.tagline,
   openGraph: {
-    title: `${person.name} — ${person.title}`,
+    title: siteTitle,
     description: person.tagline,
     type: "website",
   },

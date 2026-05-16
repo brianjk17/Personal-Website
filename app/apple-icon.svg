@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <rect width="180" height="180" rx="40" fill="#1c1c1c"/>
+  <text
+    x="90"
+    y="118"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="96"
+    font-weight="600"
+    fill="#fafafa"
+  >B</text>
+  <circle cx="128" cy="112" r="11" fill="#737373"/>
+</svg>
