@@ -130,8 +130,11 @@ export const projects: Project[] = [
     summary:
       "DeFi dashboard with TanStack Router/Query, wallet flows (wagmi, viem, Reown), charts, and NestJS APIs for vaults, Morpho-backed markets, prices, and admin.",
     href: "https://app.havenfi.co/dashboard",
-    imageSrc: "/projects/havenfi-overview.png",
-    gallery: ["/projects/havenfi-vaults.png", "/projects/havenfi-landing.png"],
+    imageSrc: "/projects/havenfi/havenfi-overview.png",
+    gallery: [
+      "/projects/havenfi/havenfi-vaults.png",
+      "/projects/havenfi/havenfi-landing.png",
+    ],
     stack: ["React", "NestJS", "Tailwind", "Wagmi", "Viem", "Morpho"],
     detail: {
       intro:
