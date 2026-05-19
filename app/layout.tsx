@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/next"
 import { Figtree, Geist_Mono, Newsreader } from "next/font/google"
 
 import "./globals.css"
@@ -57,6 +58,7 @@ export default function RootLayout({
           <SmoothScroll />
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
