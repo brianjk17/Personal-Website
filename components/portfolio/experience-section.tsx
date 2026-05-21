@@ -3,6 +3,8 @@ import Link from "next/link"
 import { experiences } from "@/lib/portfolio-data"
 import { cn } from "@/lib/utils"
 
+import { HighlightedText } from "./highlighted-text"
+
 export function ExperienceSection() {
   return (
     <section id="experience" className="scroll-mt-20 border-b border-border/60 px-4 py-20 sm:px-6 sm:py-28">
@@ -98,7 +100,7 @@ export function ExperienceSection() {
                             block.title != null && "sm:pl-0 sm:before:hidden",
                           )}
                         >
-                          {b}
+                          <HighlightedText text={b} />
                         </li>
                       ))}
                     </ul>

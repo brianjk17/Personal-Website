@@ -2,6 +2,7 @@ import Link from "next/link"
 
 import { personalProjects } from "@/lib/portfolio-data"
 
+import { HighlightedText } from "./highlighted-text"
 import { IconExternal } from "./icons"
 
 export function PersonalProjectsSection() {
@@ -22,7 +23,9 @@ export function PersonalProjectsSection() {
               <div className="min-w-0 flex-1">
                 <p className="font-medium text-foreground">{p.name}</p>
                 <p className="text-sm text-muted-foreground">{p.kind}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.detail}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <HighlightedText text={p.detail} />
+                </p>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {p.stack.map((t) => (
                     <li

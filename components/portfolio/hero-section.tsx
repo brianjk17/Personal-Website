@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { person } from "@/lib/portfolio-data"
 
+import { HighlightedText } from "./highlighted-text"
 import { IconGithub, IconLinkedin } from "./icons"
 
 export function HeroSection() {
@@ -27,7 +28,7 @@ export function HeroSection() {
           {person.name}
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          {person.tagline}
+          <HighlightedText text={person.tagline} />
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="rounded-2xl">

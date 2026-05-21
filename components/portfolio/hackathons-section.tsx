@@ -2,6 +2,7 @@ import Link from "next/link"
 
 import { hackathons } from "@/lib/portfolio-data"
 
+import { HighlightedText } from "./highlighted-text"
 import { IconExternal } from "./icons"
 
 export function HackathonsSection() {
@@ -23,7 +24,9 @@ export function HackathonsSection() {
                 <p className="text-sm text-muted-foreground">
                   {h.event} — {h.date}
                 </p>
-                <p className="mt-1 text-sm text-muted-foreground">{h.detail}</p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  <HighlightedText text={h.detail} />
+                </p>
               </div>
               <Link
                 href={h.href}

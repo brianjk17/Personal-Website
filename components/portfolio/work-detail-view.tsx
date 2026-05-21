@@ -2,6 +2,7 @@ import Link from "next/link"
 
 import type { Project } from "@/lib/portfolio-data"
 
+import { HighlightedText } from "./highlighted-text"
 import { IconExternal } from "./icons"
 import { ProjectImageStrip } from "./project-image-strip"
 
@@ -78,7 +79,9 @@ export function WorkDetailView({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
-      <p className="mt-10 text-lg leading-relaxed text-muted-foreground">{project.detail.intro}</p>
+      <p className="mt-10 text-lg leading-relaxed text-muted-foreground">
+        <HighlightedText text={project.detail.intro} />
+      </p>
       <div className="mt-14 space-y-12">
         {project.detail.sections.map((section) => (
           <section key={section.title}>
@@ -89,7 +92,7 @@ export function WorkDetailView({ project }: { project: Project }) {
                   key={i}
                   className="relative pl-5 text-sm leading-relaxed text-muted-foreground before:absolute before:left-0 before:top-[0.55em] before:size-1.5 before:rounded-full before:bg-muted-foreground/50"
                 >
-                  {b}
+                  <HighlightedText text={b} />
                 </li>
               ))}
             </ul>

@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import type { Project } from "@/lib/portfolio-data"
 
+import { HighlightedText } from "./highlighted-text"
 import { IconExternal } from "./icons"
 
 function initials(name: string) {
@@ -42,7 +43,9 @@ export function ProjectCard({ project }: { project: Project }) {
           <div className="flex items-start justify-between gap-3">
             <h3 className="font-display text-xl font-semibold tracking-tight text-foreground">{project.name}</h3>
           </div>
-          <p className="flex-1 text-sm leading-relaxed text-muted-foreground">{project.summary}</p>
+          <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
+            <HighlightedText text={project.summary} />
+          </p>
           <ul className="flex flex-wrap gap-2">
             {project.stack.map((t) => (
               <li
