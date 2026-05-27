@@ -549,7 +549,6 @@ export const experiences: Experience[] = [
         title: "Slack Copy Agent",
         bullets: [
           "Built an internal **Slack** bot so **project managers** could chat to update frontend copy—**OpenAI API** on the backend to handle requests, **GitHub API** to open **PRs** into project repos.",
-          "Separated from Holodeck: purpose-built for project manager copy workflows, not treasury or finance dashboards.",
           "**Impact**: Project managers could ship wording changes through **Slack** + reviewable **PRs** instead of blocking on engineering for every copy tweak.",
         ],
       },
